@@ -1,0 +1,47 @@
+﻿openapi: "3.0.0"
+info:
+  title: "Creek School API"
+  description: |-
+    This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
+  version: "0.0.0"
+tags:
+  - name: Students
+    description: Everything about your Pets
+    externalDocs:
+      description: Find out more
+      url: http://swagger.io
+paths:
+  /api/FindStudents:
+    get:
+      tags:
+        - Students
+      summary: Finds All students
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findPetsByStatus
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Invalid status value
+components:
+ schemas:
+  GenderType:
+      type: string
+      enum:
+        - Male
+        - Female
+      description: Gender of the student.
+      example: Male
+
+  Student:
+   type: object
+   properties:
+    firstname:
+     type: string
+     example: jhon
+    lastname:
+     type: string
+     example: DeLaRoue
+    gender:
+     $ref: '#/components/schemas/GenderType'
+     description: Gender of the student.

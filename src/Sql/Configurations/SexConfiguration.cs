@@ -1,4 +1,4 @@
-﻿namespace CreekSchool.Students.Sql
+﻿namespace CreekSchool.Sql
 {
     public class SexConfiguration : IEntityTypeConfiguration<SexModel>
     {

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AzureFunctions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7216",
+      "launchBrowser": true,
+      "launchUrl": "api"
+    }
+  }
+}
