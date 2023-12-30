@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "documentationRules": {
+      "companyName": "CreekSchool",
+      "copyrightText": "Copyright (c) {companyName}. All rights reserved."
+    }
+  }
+}
