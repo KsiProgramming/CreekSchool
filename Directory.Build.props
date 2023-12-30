@@ -1,0 +1,13 @@
+<Project>
+   <PropertyGroup>
+     <AcceleratBuilnInVisualStudio>true</AcceleratBuilnInVisualStudio>
+     <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
+	   <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+     <TargetFramework>net8.0</TargetFramework>
+   </PropertyGroup>
+	
+	<ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" />
+	</ItemGroup>
+ </Project>

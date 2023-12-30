@@ -3,6 +3,7 @@ namespace CreekSchool.Students.AzureFunctions
     using Microsoft.Azure.Functions.Worker;
     using Microsoft.Azure.Functions.Worker.Http;
     using System.Net;
+    using System.Threading.Tasks;
 
     public class StudentsFunction
     {

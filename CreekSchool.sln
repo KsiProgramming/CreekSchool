@@ -13,9 +13,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreekSchool.AzureFunctions"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DFF0DEAD-6937-4C9D-810C-2A4F57A1133E}"
 	ProjectSection(SolutionItems) = preProject
+		CodeAnalysisRules.ruleset = CodeAnalysisRules.ruleset
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
 		README.md = README.md
 		stylecop.json = stylecop.json
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{61A2B623-B06E-4662-BE96-FE73B93CF72A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +49,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61A2B623-B06E-4662-BE96-FE73B93CF72A} = {DFF0DEAD-6937-4C9D-810C-2A4F57A1133E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE04B547-99A2-4DF1-90BA-78E988EE3189}

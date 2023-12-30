@@ -1,6 +1,6 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="IStudentManager.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
+// <copyright file="IStudentManager.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
 
