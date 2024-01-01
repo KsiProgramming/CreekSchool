@@ -17,7 +17,7 @@ namespace CreekSchool.AzureFunctions
                 .ConfigureFunctionsWorkerDefaults()
                 .ConfigureServices((ctx, services) =>
                 {
-                    services.AddPersistence();
+                    services.AddPersistence(ctx.Configuration);
                     services.AddCoreServices();
                 })
                 .Build();

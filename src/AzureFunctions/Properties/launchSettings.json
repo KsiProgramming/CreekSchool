@@ -4,7 +4,10 @@
       "commandName": "Project",
       "commandLineArgs": "--port 7216",
       "launchBrowser": true,
-      "launchUrl": "api"
+      "launchUrl": "api",
+      "environmentVariables": {
+        "CREEK_SCHOOL_SQL_CONNECTIONSTRING": "Server=(LocalDB)\\MSSQLLocalDB;Database=CreekSchoolDb;Trusted_Connection=True"
+      },
     }
   }
 }
