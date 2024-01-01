@@ -1,5 +1,6 @@
 namespace CreekSchool.AzureFunctions
 {
+    using CreekSchool.Sql;
     using Microsoft.Extensions.Hosting;
 
     public static class Program
@@ -10,6 +11,7 @@ namespace CreekSchool.AzureFunctions
                 .ConfigureFunctionsWorkerDefaults()
                 .ConfigureServices((ctx, services) =>
                 {
+                    services.AddPersistence();
                     services.AddCoreServices();
                 })
                 .Build();
@@ -18,6 +20,3 @@ namespace CreekSchool.AzureFunctions
         }
     }
 }
-
-
-

@@ -11,5 +11,9 @@
         public int SexId { get; set; }
 
         public SexModel Sex { get; set; }
+
+        public int? ClassroomId { get; set; }
+
+        public ClassroomModel? Classroom { get; set; }
     }
 }

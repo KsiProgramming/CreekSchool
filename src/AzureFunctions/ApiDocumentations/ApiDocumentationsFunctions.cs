@@ -9,7 +9,7 @@ namespace CreekSchool.AzureFunctions
     public static class ApiDocumentationsFunctions
     {
         [Function("ApiDocumentations")]
-        public static async Task<HttpResponseData> GetApiDocumentations([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "api.yaml")] HttpRequestData req)
+        public static async Task<HttpResponseData> GetApiDocumentations([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "api/api.yaml")] HttpRequestData req)
         {
             using var apiDocumentation = File.OpenRead("ApiDocumentations/API.yaml");
 

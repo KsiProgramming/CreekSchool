@@ -29,20 +29,20 @@
                 .HasColumnType("INT")
                 .IsRequired();
 
-            builder.Property(e => e.SexId)
-                .HasColumnName("SexId")
-                .HasColumnType("INT")
-                .IsRequired();
-
             builder.HasOne(e => e.Sex)
                 .WithMany()
                 .HasForeignKey(e => e.SexId);
+
+            builder
+                .Property(e => e.ClassroomId)
+                .HasColumnName("ClassroomId")
+                .HasColumnType("INT")
+                .IsRequired(false);
+
+            builder
+                .HasOne(e => e.Classroom)
+                .WithMany()
+                .HasForeignKey(e => e.ClassroomId);
         }
     }
 }
-
-
-
-
-
-

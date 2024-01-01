@@ -70,5 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishCreekSchoolDb.publish.publish.xml" />
+    <None Include="CreekSchool.Sql.DataBase.publish.xml" />
   </ItemGroup>
 </Project>

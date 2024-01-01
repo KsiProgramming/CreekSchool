@@ -11,6 +11,8 @@ namespace CreekSchool.Students
 
     public interface IStudentManager
     {
+        Task AddAsync(IReadOnlyCollection<Student> students);
+
         Task<IReadOnlyCollection<Student>> FindAsync(StudentQuery query);
     }
 }

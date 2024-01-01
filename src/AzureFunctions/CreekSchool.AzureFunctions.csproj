@@ -27,6 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\CreekSchool.Core.csproj" />
+    <ProjectReference Include="..\Sql\CreekSchool.Sql.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

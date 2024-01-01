@@ -9,10 +9,12 @@
             this.Gender = gender;
         }
 
-        public string FirstName { get; set; }
+        public string FirstName { get; }
 
-        public string LastName { get; set; }
+        public string LastName { get; }
 
-        public GenderType Gender { get; set; }
+        public GenderType Gender { get; }
+
+        public string? Classroom { get; set; }
     }
 }
