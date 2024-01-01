@@ -1,4 +1,10 @@
-﻿namespace CreekSchool.Sql
+﻿//-----------------------------------------------------------------------
+// <copyright file="GradeModel.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
+namespace CreekSchool.Sql
 {
     public class GradeModel
     {

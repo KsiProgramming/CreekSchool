@@ -1,3 +1,9 @@
+//-----------------------------------------------------------------------
+// <copyright file="Program.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
 namespace CreekSchool.AzureFunctions
 {
     using CreekSchool.Sql;

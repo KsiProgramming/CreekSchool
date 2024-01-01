@@ -1,4 +1,10 @@
-﻿namespace CreekSchool.Sql.Configurations
+﻿//-----------------------------------------------------------------------
+// <copyright file="DataModelConfigurationModule.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
+namespace CreekSchool.Sql.Configurations
 {
     internal static class DataModelConfigurationModule
     {

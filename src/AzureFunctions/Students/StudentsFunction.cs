@@ -1,10 +1,15 @@
+//-----------------------------------------------------------------------
+// <copyright file="StudentsFunction.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
 namespace CreekSchool.Students.AzureFunctions
 {
-    using Azure.Core;
-    using Microsoft.Azure.Functions.Worker;
-    using Microsoft.Azure.Functions.Worker.Http;
     using System.Net;
     using System.Threading.Tasks;
+    using Microsoft.Azure.Functions.Worker;
+    using Microsoft.Azure.Functions.Worker.Http;
 
     public class StudentsFunction
     {
@@ -18,7 +23,7 @@ namespace CreekSchool.Students.AzureFunctions
         [Function("AddStudent")]
         public async Task<HttpResponseData> AddStudent([HttpTrigger(AuthorizationLevel.Anonymous, "Post", Route = "api/AddStudent")] HttpRequestData req)
         {
-            var jsonStudentToAdd = await req.ReadFromJsonAsync<AddStudentJson>();
+            var jsonStudentToAdd = await req.ReadFromJsonAsync<AddStudentRequestJson>();
 
             var students = new Student[]
             {

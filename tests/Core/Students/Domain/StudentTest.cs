@@ -1,4 +1,10 @@
-﻿namespace CreekSchool.Students.Tests
+﻿//-----------------------------------------------------------------------
+// <copyright file="StudentTest.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
+namespace CreekSchool.Students.Tests
 {
     public class StudentTest
     {

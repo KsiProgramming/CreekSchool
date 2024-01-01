@@ -1,6 +1,8 @@
-﻿
-
-using System.Runtime.CompilerServices;
+﻿//-----------------------------------------------------------------------
+// <copyright file="StudentRepository.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
 namespace CreekSchool.Students.Sql
 {
@@ -36,13 +38,13 @@ namespace CreekSchool.Students.Sql
                 students = students.Where(s => s.FirstName.Equals(query.FirstName));
             }
 
-            var resutl = students
+            var result = students
                 .Include(s => s.Sex)
                 .Include(s => s.Classroom)
                 .Select(MapStudent)
                 .ToArray();
 
-            return resutl;
+            return result;
         }
 
         private static Student MapStudent(StudentModel model)
@@ -56,7 +58,7 @@ namespace CreekSchool.Students.Sql
             };
         }
 
-        private async Task<StudentModel> MapStudentModel(Student student)
+        private static StudentModel MapStudentModel(Student student)
         {
             return new StudentModel()
             {

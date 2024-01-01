@@ -1,4 +1,10 @@
-﻿namespace CreekSchool.Students
+﻿//-----------------------------------------------------------------------
+// <copyright file="IStudentRepository.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
+namespace CreekSchool.Students
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;

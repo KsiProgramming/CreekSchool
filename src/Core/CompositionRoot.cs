@@ -1,4 +1,10 @@
-﻿namespace CreekSchool
+﻿//-----------------------------------------------------------------------
+// <copyright file="CompositionRoot.cs" company="CreekSchool">
+// Copyright (c) CreekSchool. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
+
+namespace CreekSchool
 {
     using CreekSchool.Students;
     using Microsoft.Extensions.DependencyInjection;
