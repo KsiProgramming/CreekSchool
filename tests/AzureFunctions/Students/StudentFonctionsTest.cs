@@ -72,6 +72,7 @@ namespace CreekSchool.Students.AzureFunctions.Tests
             await functions.AddStudent(request.Object);
 
             request.Verify();
+            response.Verify();
             manager.Verify();
         }
     }
