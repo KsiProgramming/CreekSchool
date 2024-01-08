@@ -13,6 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreekSchool.AzureFunctions"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DFF0DEAD-6937-4C9D-810C-2A4F57A1133E}"
 	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
 		CodeAnalysisRules.ruleset = CodeAnalysisRules.ruleset
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
@@ -24,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{61A2B623-B06
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreekSchool.Core.Tests", "tests\Core\CreekSchool.Core.Tests.csproj", "{FC9CCF67-479D-47AA-85B5-0F3F16393AF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreekSchool.AzureFunctions.Tests", "tests\AzureFunctions\CreekSchool.AzureFunctions.Tests.csproj", "{431F1D10-D4E5-4837-AC14-42B996ADF5E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreekSchool.AzureFunctions.Tests", "tests\AzureFunctions\CreekSchool.AzureFunctions.Tests.csproj", "{431F1D10-D4E5-4837-AC14-42B996ADF5E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

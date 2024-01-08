@@ -1,0 +1,32 @@
+# azure-pipelines.yml
+
+trigger:
+- main  # Specify the branch you want to trigger the pipeline on
+
+pool:
+  vmImage: 'windows-latest'  # Use an appropriate image based on your project requirements
+
+stages:
+- stage: BuildAndTest
+  jobs:
+  - job: Build
+    displayName: 'Build and Test'
+    steps:
+    - task: UseDotNet@2
+      inputs:
+        packageType: 'sdk'
+        version: '8.0'  # Replace with your desired .NET version
+
+    - script: dotnet restore
+      displayName: 'Restore NuGet packages'
+
+    - script: dotnet build --configuration Release
+      displayName: 'Build solution'
+
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'test'
+        projects: '**/*Tests.csproj'
+        arguments: '--configuration Release'
+
+# Add additional stages or tasks as needed for your deployment, publishing, etc.
