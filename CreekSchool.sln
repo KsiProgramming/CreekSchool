@@ -13,6 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreekSchool.AzureFunctions"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DFF0DEAD-6937-4C9D-810C-2A4F57A1133E}"
 	ProjectSection(SolutionItems) = preProject
+		article.md = article.md
 		azure-pipelines.yml = azure-pipelines.yml
 		CodeAnalysisRules.ruleset = CodeAnalysisRules.ruleset
 		Directory.Build.props = Directory.Build.props
